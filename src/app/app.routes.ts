@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
 	{
-		path: '',
+		path: 'home',
 		title: 'Home | Murrel & Honey Farms',
 		loadComponent: () => import('./pages/home/home.component').then((m) => m.HomeComponent),
 	},
@@ -28,6 +28,6 @@ export const routes: Routes = [
 	},
 	{
 		path: '**',
-		redirectTo: '',
+		redirectTo: 'home',
 	},
 ];
