@@ -1,0 +1,35 @@
+.about-image-card {
+  padding: 1rem;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, rgba(255, 209, 102, 0.18) 0%, rgba(79, 111, 82, 0.12) 100%);
+}
+
+.strength-card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(79, 111, 82, 0.08);
+  box-shadow: 0 12px 24px rgba(42, 52, 42, 0.06);
+}
+
+.strength-icon {
+  width: 3.4rem;
+  height: 3.4rem;
+  display: inline-grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 209, 102, 0.2);
+  color: var(--brand-brown);
+  font-size: 1.35rem;
+}
+
+.strength-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.strength-card p {
+  margin-bottom: 0;
+  color: var(--text-muted);
+}

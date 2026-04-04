@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container py-2">
+    <a class="navbar-brand d-flex flex-column" routerLink="/" (click)="closeMenu()">
+      <span class="brand-title">{{ business.shortName }}</span>
+      <span class="brand-tagline">Fresh fish • Pure honey</span>
+    </a>
+
+    <button
+      type="button"
+      class="navbar-toggler border-0 shadow-none"
+      aria-label="Toggle navigation"
+      [attr.aria-expanded]="isMenuOpen"
+      (click)="toggleMenu()"
+    >
+      <i class="bi" [class.bi-list]="!isMenuOpen" [class.bi-x-lg]="isMenuOpen"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 py-3 py-lg-0">
+        @for (item of navItems; track item.path) {
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="item.path"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+              (click)="closeMenu()"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-brand btn-sm px-4" [href]="business.phone">Call Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

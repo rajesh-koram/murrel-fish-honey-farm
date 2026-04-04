@@ -1,0 +1,139 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+	--brand-green: #4f6f52;
+	--brand-green-dark: #35563a;
+	--brand-brown: #8b5e34;
+	--brand-yellow: #ffd166;
+	--brand-cream: #f8f4ea;
+	--text-dark: #223828;
+	--text-muted: #5e6c60;
+	--surface-soft: #f3efe4;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
+
+body {
+	margin: 0;
+	font-family: Inter, 'Segoe UI', sans-serif;
+	background: var(--brand-cream);
+	color: var(--text-dark);
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Segoe UI', Inter, sans-serif;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+p {
+	line-height: 1.7;
+}
+
+.page-section {
+	padding: clamp(4rem, 7vw, 6rem) 0;
+}
+
+.bg-cream {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(243, 239, 228, 0.9) 100%);
+}
+
+.section-heading {
+	max-width: 720px;
+	margin-bottom: 2rem;
+}
+
+.section-heading h1,
+.section-heading h2 {
+	margin-bottom: 1rem;
+}
+
+.section-heading p {
+	color: var(--text-muted);
+	margin-bottom: 0;
+}
+
+.section-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--brand-brown);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	margin-bottom: 0.9rem;
+}
+
+.section-label::before {
+	content: '';
+	width: 2.2rem;
+	height: 2px;
+	background: currentColor;
+}
+
+.btn-brand {
+	background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+	border: none;
+	color: #fff;
+	box-shadow: 0 12px 22px rgba(53, 86, 58, 0.22);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+	color: #fff;
+	background: linear-gradient(135deg, #456749 0%, #2f4f35 100%);
+}
+
+.btn-outline-brand {
+	border: 1px solid rgba(79, 111, 82, 0.35);
+	color: var(--brand-green);
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline-brand:hover,
+.btn-outline-brand:focus {
+	background: var(--brand-green);
+	color: #fff;
+}
+
+.hover-lift {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+	transform: translateY(-6px);
+}
+
+.fade-in-section {
+	animation: fadeUp 0.75s ease both;
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(18px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

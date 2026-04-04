@@ -1,0 +1,11 @@
+:host {
+	display: block;
+}
+
+.app-shell {
+	min-height: 100vh;
+}
+
+.main-content {
+	overflow: clip;
+}

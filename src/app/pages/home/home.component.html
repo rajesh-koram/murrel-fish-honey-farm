@@ -1,0 +1,56 @@
+<section class="hero-section" [style.background-image]="heroBackground">
+  <div class="container py-5">
+    <div class="hero-card fade-in-section">
+      <span class="eyebrow">Locally raised • Naturally harvested</span>
+      <h1>{{ business.name }}</h1>
+      <p class="hero-text">{{ business.tagline }}</p>
+      <p class="hero-subtext">{{ business.description }}</p>
+      <div class="hero-actions d-flex flex-wrap gap-3">
+        <a routerLink="/contact" class="btn btn-brand btn-lg px-4">Contact Us</a>
+        <a routerLink="/products" class="btn btn-outline-light btn-lg px-4">View Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section bg-cream">
+  <div class="container">
+    <div class="section-heading text-center mx-auto">
+      <span class="section-label">Why customers choose us</span>
+      <h2>Fresh local products with care at every step</h2>
+      <p>From pond maintenance to honey collection, the focus stays on clean handling, quality, and trust.</p>
+    </div>
+
+    <div class="row g-4 mt-1">
+      @for (item of highlights; track item.title) {
+        <div class="col-md-4">
+          <article class="info-card h-100 fade-in-section">
+            <div class="icon-wrap"><i class="bi {{ item.icon }}"></i></div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+      <div class="section-heading mb-0">
+        <span class="section-label">Featured products</span>
+        <h2>Popular choices from our fish and honey range</h2>
+      </div>
+      <a routerLink="/products" class="btn btn-outline-brand">Explore all products</a>
+    </div>
+
+    <div class="row g-4">
+      @for (product of featuredProducts; track product.id) {
+        <div class="col-md-6 col-xl-4 d-flex">
+          <app-product-card class="w-100" [product]="product"></app-product-card>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+.page-banner {
+  padding-bottom: 2rem;
+}
+
+.banner-text {
+  max-width: 720px;
+}
+
+.category-block + .category-block {
+  margin-top: 4rem;
+}

@@ -1,0 +1,37 @@
+.gallery-card {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 32px rgba(42, 52, 42, 0.08);
+}
+
+.gallery-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.12;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(8, 12, 8, 0.05) 20%, rgba(17, 27, 18, 0.84) 100%);
+}
+
+.gallery-overlay p {
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 0;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.06);
+}

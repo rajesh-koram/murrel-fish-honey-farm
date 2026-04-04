@@ -1,0 +1,15 @@
+<article class="product-card hover-lift h-100">
+  <div class="product-image-wrap">
+    <img [src]="product().image" [alt]="product().title" class="product-image" />
+    <span class="product-badge">{{ product().badge }}</span>
+  </div>
+
+  <div class="product-body">
+    <h3>{{ product().title }}</h3>
+    <p>{{ product().description }}</p>
+    <div class="product-footer">
+      <span class="product-price">{{ product().price }}</span>
+      <a routerLink="/contact" class="btn btn-outline-brand btn-sm">Enquire</a>
+    </div>
+  </div>
+</article>

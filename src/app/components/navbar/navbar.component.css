@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.navbar {
+  background: rgba(248, 244, 234, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(79, 111, 82, 0.12);
+}
+
+.navbar-brand {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.brand-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.brand-tagline {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.navbar-toggler {
+  color: var(--brand-green);
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  transition: 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--brand-green);
+  background: rgba(79, 111, 82, 0.08);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: rgba(248, 244, 234, 0.98);
+    border-radius: 1.25rem;
+    margin-top: 1rem;
+    padding: 0 0.75rem;
+    border: 1px solid rgba(79, 111, 82, 0.1);
+  }
+}

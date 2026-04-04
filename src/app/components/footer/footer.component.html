@@ -1,0 +1,45 @@
+<footer class="footer-section">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h3 class="footer-title">{{ business.name }}</h3>
+        <p class="footer-text mb-3">{{ business.description }}</p>
+        <div class="d-flex gap-3 fs-5">
+          <a class="social-link" [href]="business.whatsappLink" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a class="social-link" [href]="business.phone" aria-label="Call">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a class="social-link" [href]="'mailto:' + business.email" aria-label="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <h4 class="footer-subtitle">Quick Links</h4>
+        <ul class="list-unstyled footer-links">
+          @for (link of quickLinks; track link.path) {
+            <li><a [routerLink]="link.path">{{ link.label }}</a></li>
+          }
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-lg-5">
+        <h4 class="footer-subtitle">Contact</h4>
+        <ul class="list-unstyled footer-contact">
+          <li><i class="bi bi-telephone"></i><span>{{ business.phoneDisplay }}</span></li>
+          <li><i class="bi bi-geo-alt"></i><span>{{ business.address }}</span></li>
+          <li><i class="bi bi-clock"></i><span>{{ business.hours }}</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© 2026 {{ business.name }}. All rights reserved.</span>
+      <span>Fresh local produce with care and quality.</span>
+    </div>
+  </div>
+</footer>

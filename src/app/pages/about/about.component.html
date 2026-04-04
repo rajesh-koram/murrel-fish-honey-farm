@@ -1,0 +1,37 @@
+<section class="page-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 fade-in-section">
+        <span class="section-label">About us</span>
+        <h1 class="mb-4">Built on local farming values and genuine product care</h1>
+        <p class="lead text-muted">
+          {{ business.name }} began with a simple goal: deliver fresh murrel fish and pure natural honey from trusted local farming practices.
+        </p>
+        <p>
+          Our family-led operation focuses on consistency, careful handling, and strong relationships with nearby customers who value freshness and honest sourcing.
+        </p>
+        <p>
+          From healthy pond management to responsible honey collection, every step is designed to keep quality high while staying close to nature.
+        </p>
+      </div>
+
+      <div class="col-lg-6 fade-in-section">
+        <div class="about-image-card">
+          <img [src]="business.heroImage" alt="Farm and honey illustration" class="img-fluid rounded-4" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      @for (item of strengths; track item.title) {
+        <div class="col-md-4">
+          <article class="strength-card h-100 fade-in-section">
+            <div class="strength-icon"><i class="bi {{ item.icon }}"></i></div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>

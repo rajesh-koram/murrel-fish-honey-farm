@@ -1,0 +1,58 @@
+<section class="page-section">
+  <div class="container">
+    <div class="section-heading text-center mx-auto fade-in-section">
+      <span class="section-label">Contact us</span>
+      <h1>Reach us for fresh fish and natural honey orders</h1>
+      <p>Call, message on WhatsApp, or visit the farm location for local supply and product enquiries.</p>
+    </div>
+
+    <div class="row g-4 align-items-stretch mt-2">
+      <div class="col-lg-5">
+        <div class="contact-card h-100 fade-in-section">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h3>Phone</h3>
+              <a [href]="business.phone">{{ business.phoneDisplay }}</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon whatsapp"><i class="bi bi-whatsapp"></i></div>
+            <div>
+              <h3>WhatsApp</h3>
+              <a [href]="business.whatsappLink" target="_blank" rel="noreferrer">Chat with us instantly</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h3>Address</h3>
+              <p>{{ business.address }}</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <h3>Business Hours</h3>
+              <p>{{ business.hours }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="map-card fade-in-section">
+          <iframe
+            title="Business location map"
+            [src]="mapUrl"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

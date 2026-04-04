@@ -1,0 +1,55 @@
+:host {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1040;
+}
+
+.floating-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.floating-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(18, 24, 18, 0.16);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(18, 24, 18, 0.2);
+}
+
+.call-btn {
+  background: linear-gradient(135deg, #8b5e34 0%, #6b4226 100%);
+}
+
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25d366 0%, #16803c 100%);
+}
+
+@media (max-width: 575.98px) {
+  :host {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .floating-btn span {
+    display: none;
+  }
+
+  .floating-btn {
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0;
+  }
+}

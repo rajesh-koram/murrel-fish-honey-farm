@@ -1,0 +1,30 @@
+<section class="page-section page-banner">
+  <div class="container text-center fade-in-section">
+    <span class="section-label">Our products</span>
+    <h1 class="display-5 fw-bold mb-3">Fresh Murrel Fish & Natural Honey</h1>
+    <p class="lead text-muted mx-auto banner-text">
+      Quality local produce presented in a simple, clean catalogue for retail buyers, families, and nearby businesses.
+    </p>
+  </div>
+</section>
+
+<section class="page-section pt-0">
+  <div class="container">
+    @for (category of categories; track category.id) {
+      <div class="category-block fade-in-section">
+        <div class="section-heading mb-4">
+          <span class="section-label">{{ category.title }}</span>
+          <h2>{{ category.subtitle }}</h2>
+        </div>
+
+        <div class="row g-4">
+          @for (product of category.products; track product.id) {
+            <div class="col-md-6 col-xl-4 d-flex">
+              <app-product-card class="w-100" [product]="product"></app-product-card>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,60 @@
+:host {
+  display: block;
+}
+
+.footer-section {
+  background: linear-gradient(180deg, #2f4f35 0%, #223828 100%);
+  color: #f8f4ea;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.footer-subtitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-text,
+.footer-links a,
+.footer-contact span,
+.footer-bottom {
+  color: rgba(248, 244, 234, 0.82);
+}
+
+.footer-links li + li,
+.footer-contact li + li {
+  margin-top: 0.8rem;
+}
+
+.footer-links a,
+.social-link {
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links a:hover,
+.social-link:hover {
+  color: #ffd166;
+  transform: translateY(-2px);
+}
+
+.footer-contact li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.footer-contact i,
+.social-link {
+  color: #ffd166;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(248, 244, 234, 0.12);
+  font-size: 0.92rem;
+}
