@@ -1,12 +1,12 @@
 <section class="hero-section" [style.background-image]="heroBackground">
   <div class="container py-5">
     <div class="hero-card fade-in-section">
-      <span class="eyebrow">Locally raised • Naturally harvested</span>
-      <h1>{{ business.name }}</h1>
-      <p class="hero-text">{{ business.tagline }}</p>
-      <p class="hero-subtext">{{ business.description }}</p>
+      <span class="eyebrow">Aquaculture support • Naturally collected honey</span>
+      <h1>{{ business.tagline }}</h1>
+      <p class="hero-text">{{ business.description }}</p>
+      <p class="hero-subtext">Trusted local supply for fish farmers, pond owners, and families who value purity.</p>
       <div class="hero-actions d-flex flex-wrap gap-3">
-        <a routerLink="/contact" class="btn btn-brand btn-lg px-4">Contact Us</a>
+        <a routerLink="/contact" class="btn btn-brand btn-lg px-4">Get Supply Details</a>
         <a routerLink="/products" class="btn btn-outline-light btn-lg px-4">View Products</a>
       </div>
     </div>
@@ -17,8 +17,8 @@
   <div class="container">
     <div class="section-heading text-center mx-auto">
       <span class="section-label">Why customers choose us</span>
-      <h2>Fresh local products with care at every step</h2>
-      <p>From pond maintenance to honey collection, the focus stays on clean handling, quality, and trust.</p>
+      <h2>Professional support for fish farming and pure natural honey</h2>
+      <p>From fish seed nursery care to natural honey collection, the focus stays on health, purity, and dependable supply.</p>
     </div>
 
     <div class="row g-4 mt-1">
@@ -37,10 +37,32 @@
 
 <section class="page-section">
   <div class="container">
+    <div class="what-are-seeds row g-4 align-items-center mb-5">
+      <div class="col-lg-5">
+        <div class="section-heading mb-0 fade-in-section">
+          <span class="section-label">What are fish seeds?</span>
+          <h2>Starter stock used for aquaculture and pond farming</h2>
+          <p>
+            Fish seeds are young fingerlings raised for stocking into ponds and farms. Quality fish seeds help farmers start with healthy stock and improve survival and growth rates.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="seed-facts-card fade-in-section">
+          @for (fact of fishSeedFacts; track fact) {
+            <div class="seed-fact-item">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>{{ fact }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
       <div class="section-heading mb-0">
         <span class="section-label">Featured products</span>
-        <h2>Popular choices from our fish and honey range</h2>
+        <h2>Popular choices from our fish seed and honey range</h2>
       </div>
       <a routerLink="/products" class="btn btn-outline-brand">Explore all products</a>
     </div>

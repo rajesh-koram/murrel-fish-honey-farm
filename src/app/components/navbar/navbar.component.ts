@@ -14,7 +14,7 @@ export class NavbarComponent {
 
   protected readonly business = this.businessDataService.getBusinessInfo();
   protected readonly navItems = [
-    { label: 'Home', path: '/' },
+    { label: 'Home', path: '/home' },
     { label: 'Products', path: '/products' },
     { label: 'About', path: '/about' },
     { label: 'Gallery', path: '/gallery' },

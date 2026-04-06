@@ -1,15 +1,39 @@
 <section class="page-section page-banner">
   <div class="container text-center fade-in-section">
     <span class="section-label">Our products</span>
-    <h1 class="display-5 fw-bold mb-3">Fresh Murrel Fish & Natural Honey</h1>
+    <h1 class="display-5 fw-bold mb-3">Murrel Fish Seeds & Pure Natural Honey</h1>
     <p class="lead text-muted mx-auto banner-text">
-      Quality local produce presented in a simple, clean catalogue for retail buyers, families, and nearby businesses.
+      A clear catalogue focused on fish farming supply and pure natural honey for farmers, pond owners, and local households.
     </p>
   </div>
 </section>
 
 <section class="page-section pt-0">
   <div class="container">
+    <div class="seed-info-card fade-in-section mb-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <span class="section-label">Fish seed guide</span>
+          <h2>What are Murrel Fish Seeds?</h2>
+          <p class="mb-0">
+            Murrel fish seeds are young fingerlings supplied for aquaculture and pond farming. Farmers stock them into ponds to grow healthy market-size fish over time.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            @for (note of fishSeedNotes; track note) {
+              <div class="col-md-4">
+                <div class="seed-note h-100">
+                  <i class="bi bi-water"></i>
+                  <p>{{ note }}</p>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
     @for (category of categories; track category.id) {
       <div class="category-block fade-in-section">
         <div class="section-heading mb-4">

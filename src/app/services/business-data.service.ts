@@ -45,17 +45,17 @@ export interface GalleryItem {
 })
 export class BusinessDataService {
   private readonly businessInfo: BusinessInfo = {
-    name: 'Murrel & Honey Farms',
-    shortName: 'M&H Farms',
-    tagline: 'Fresh murrel fish and pure natural honey from pond and hive.',
+    name: 'Murrel Fish Seeds & Honey Farms',
+    shortName: 'MFS & Honey',
+    tagline: 'Murrel Fish Seeds & Pure Natural Honey',
     description:
-      'A local family-run business focused on naturally raised murrel fish, responsibly harvested honey, and honest farm-to-home quality.',
+      'Healthy fish seeds for farming and pure organic honey directly from source.',
     heroImage: '/assets/images/hero-farm.svg',
     phone: 'tel:+919876543210',
     phoneDisplay: '+91 98765 43210',
     whatsappNumber: '919876543210',
     whatsappLink:
-      'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20murrel%20fish%20and%20honey.',
+      'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20murrel%20fish%20seeds%20and%20natural%20honey.',
     address: 'Village Main Road, Near Fresh Water Ponds, Andhra Pradesh, India',
     email: 'hello@murrelandhoneyfarms.com',
     hours: 'Open daily: 7:00 AM - 7:00 PM',
@@ -65,55 +65,45 @@ export class BusinessDataService {
   private readonly productCategories: ProductCategory[] = [
     {
       id: 'murrel-fish',
-      title: 'Murrel Fish',
-      subtitle: 'Freshwater fish with firm texture, rich taste, and reliable freshness.',
+      title: 'Murrel Fish Seeds',
+      subtitle: 'High-quality fingerlings suitable for aquaculture, pond stocking, and dependable fish farming growth.',
       products: [
         {
-          id: 'murrel-live',
+          id: 'murrel-seeds',
           category: 'murrel-fish',
-          image: '/assets/images/murrel-fish.svg',
-          title: 'Live Murrel Fish',
+          image: '/assets/images/pond-view.svg',
+          title: 'Murrel Fish Seeds',
           description:
-            'Healthy, pond-raised live murrel fish supplied fresh for home cooking, retail, and small bulk orders.',
+            'High quality fingerlings suitable for aquaculture and fish farming, with healthy disease-free stock available in different sizes.',
           price: 'Contact for price',
-          badge: 'Farm Fresh',
-        },
-        {
-          id: 'murrel-cleaned',
-          category: 'murrel-fish',
-          image: '/assets/images/murrel-fish.svg',
-          title: 'Cleaned Murrel Cuts',
-          description:
-            'Freshly cleaned and packed murrel cuts prepared hygienically for quick cooking and convenience.',
-          price: 'Contact for today\'s price',
-          badge: 'Cleaned to Order',
+          badge: 'For Fish Farming',
         },
       ],
     },
     {
       id: 'honey',
-      title: 'Natural Honey',
-      subtitle: 'Unblended honey collected with care from healthy hives and floral surroundings.',
+      title: 'Honey',
+      subtitle: 'Pure natural honey collected from clean natural sources with focus on purity, taste, and trust.',
       products: [
         {
           id: 'raw-honey',
           category: 'honey',
           image: '/assets/images/wild-honey.svg',
-          title: 'Raw Forest Honey',
+          title: 'Pure Natural Honey',
           description:
-            'Pure raw honey with a rich natural aroma, minimal processing, and the golden taste of local flora.',
-          price: '250g / 500g packs available',
-          badge: 'Natural',
+            '100% pure natural honey with no chemicals or additives, collected carefully from natural floral sources.',
+          price: 'Contact for price',
+          badge: '100% Pure',
         },
         {
           id: 'farm-honey',
           category: 'honey',
           image: '/assets/images/wild-honey.svg',
-          title: 'Farm Honey Bottle',
+          title: 'Natural Honey Bottle',
           description:
-            'Cleanly filtered farm honey packed in sealed bottles for families who want everyday natural sweetness.',
+            'Collected from natural sources and packed with care to preserve purity, aroma, and everyday use quality.',
           price: 'Contact for wholesale & retail price',
-          badge: 'Best Seller',
+          badge: 'No Additives',
         },
       ],
     },
@@ -122,27 +112,27 @@ export class BusinessDataService {
   private readonly galleryItems: GalleryItem[] = [
     {
       id: 'pond-view',
-      title: 'Healthy Pond Environment',
+      title: 'Fish Farming Ponds',
       image: '/assets/images/pond-view.svg',
-      description: 'Clean pond spaces and consistent natural care for strong murrel growth.',
+      description: 'Clean pond spaces prepared for stocking murrel fish seeds and supporting healthy aquaculture growth.',
     },
     {
       id: 'harvest-day',
-      title: 'Fresh Harvest Day',
+      title: 'Net Harvesting of Seeds',
       image: '/assets/images/harvest-day.svg',
-      description: 'Careful harvesting and quick handling to keep products fresh and customer-ready.',
+      description: 'Careful grading and net harvesting of fingerlings for safe transport to fish farming ponds.',
+    },
+    {
+      id: 'breeding-tanks',
+      title: 'Fish Seed Breeding Tanks',
+      image: '/assets/images/breeding-tanks.svg',
+      description: 'Well-maintained nursery and breeding tanks for healthy murrel seed development and farm supply.',
     },
     {
       id: 'honey-collection',
       title: 'Honey Collection',
       image: '/assets/images/honey-collection.svg',
       description: 'Responsible honey collection that protects hive health and quality.',
-    },
-    {
-      id: 'local-market',
-      title: 'Local Delivery & Supply',
-      image: '/assets/images/local-market.svg',
-      description: 'Trusted by nearby homes and local buyers for freshness and genuine service.',
     },
   ];
 

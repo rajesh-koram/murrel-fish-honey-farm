@@ -15,20 +15,25 @@ export class HomeComponent {
 
   protected readonly business = this.businessDataService.getBusinessInfo();
   protected readonly featuredProducts = this.businessDataService.getFeaturedProducts();
+  protected readonly fishSeedFacts = [
+    'Young fingerlings supplied for pond stocking and aquaculture use.',
+    'Healthy, active, and disease-free stock selected for reliable farm growth.',
+    'Available in different sizes to match early-stage and growing pond needs.',
+  ];
   protected readonly highlights = [
     {
-      title: 'Natural Farming',
-      description: 'Raised and harvested with a focus on natural methods, clean surroundings, and honest care.',
+      title: 'Sustainable Aquaculture',
+      description: 'Fish seed production is handled with clean water management, careful nursery practices, and farm-ready stocking support.',
       icon: 'bi-tree-fill',
     },
     {
-      title: 'Freshness First',
-      description: 'Fast local delivery and on-demand supply keep fish and honey fresh for every customer.',
+      title: 'Healthy Seed Supply',
+      description: 'Murrel fingerlings are selected for quality, vitality, and dependable performance in fish farming ponds.',
       icon: 'bi-droplet-half',
     },
     {
-      title: 'Trusted Quality',
-      description: 'Every order reflects local experience, careful handling, and dependable product quality.',
+      title: 'Pure Natural Honey',
+      description: 'Honey is collected from natural sources with focus on purity, no additives, and trusted quality.',
       icon: 'bi-patch-check-fill',
     },
   ];

@@ -6,6 +6,32 @@
   max-width: 720px;
 }
 
+.seed-info-card {
+  padding: 2rem;
+  border-radius: 1.75rem;
+  background: #fff;
+  border: 1px solid rgba(79, 111, 82, 0.1);
+  box-shadow: 0 16px 32px rgba(42, 52, 42, 0.06);
+}
+
+.seed-note {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background: rgba(79, 111, 82, 0.06);
+}
+
+.seed-note i {
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  color: var(--brand-green);
+  font-size: 1.25rem;
+}
+
+.seed-note p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
 .category-block + .category-block {
   margin-top: 4rem;
 }

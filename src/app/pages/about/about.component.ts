@@ -13,18 +13,18 @@ export class AboutComponent {
   protected readonly business = this.businessDataService.getBusinessInfo();
   protected readonly strengths = [
     {
-      title: 'Natural farming approach',
-      description: 'We maintain clean pond conditions and support honey collection practices that respect the natural cycle.',
+      title: 'Fish seed farming',
+      description: 'We raise murrel fingerlings in clean nursery environments to support pond stocking and long-term fish farming success.',
       icon: 'bi-flower1',
     },
     {
-      title: 'Freshness you can trust',
-      description: 'Orders are handled with attention and supplied quickly to preserve taste, texture, and purity.',
+      title: 'Sustainable aquaculture',
+      description: 'Healthy water management, careful grading, and responsible handling help maintain reliable seed quality for farmers.',
       icon: 'bi-stars',
     },
     {
-      title: 'Quality assurance',
-      description: 'Every batch is selected carefully so customers receive consistent products they can recommend with confidence.',
+      title: 'Pure honey collection',
+      description: 'Honey is collected from natural sources with emphasis on purity, no additives, and trusted quality for every customer.',
       icon: 'bi-shield-check',
     },
   ];

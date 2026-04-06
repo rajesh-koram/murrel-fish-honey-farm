@@ -22,6 +22,6 @@ describe('App', () => {
     await fixture.whenStable();
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('M&H Farms');
+    expect(compiled.textContent).toContain('MFS & Honey');
   });
 });

@@ -13,4 +13,9 @@ export class ProductsComponent {
   private readonly businessDataService = inject(BusinessDataService);
 
   protected readonly categories = this.businessDataService.getProductCategories();
+  protected readonly fishSeedNotes = [
+    'Fingerlings are used to stock fish ponds and start aquaculture production.',
+    'Healthy seed selection supports better survival, growth, and farm performance.',
+    'Available in different sizes based on pond stage and farming needs.',
+  ];
 }
