@@ -45,21 +45,21 @@ export interface GalleryItem {
 })
 export class BusinessDataService {
   private readonly businessInfo: BusinessInfo = {
-    name: 'Murrel Fish Seeds & Honey Farms',
-    shortName: 'MFS & Honey',
+    name: 'Madhavarao Fish Hatchery & Honey Farm',
+    shortName: 'MR FISH HATCHERY',
     tagline: 'Murrel Fish Seeds & Pure Natural Honey',
     description:
       'Healthy fish seeds for farming and pure organic honey directly from source.',
     heroImage: '/assets/images/hero-farm.svg',
-    phone: 'tel:+919876543210',
-    phoneDisplay: '+91 98765 43210',
-    whatsappNumber: '919876543210',
+    phone: 'tel:+918688624508',
+    phoneDisplay: '+91 86886 24508',
+    whatsappNumber: '918688624508',
     whatsappLink:
-      'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20murrel%20fish%20seeds%20and%20natural%20honey.',
-    address: 'Village Main Road, Near Fresh Water Ponds, Andhra Pradesh, India',
-    email: 'hello@murrelandhoneyfarms.com',
-    hours: 'Open daily: 7:00 AM - 7:00 PM',
-    mapEmbedUrl: 'https://www.google.com/maps?q=Andhra%20Pradesh%2C%20India&output=embed',
+      'https://wa.me/918688624508?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20murrel%20fish%20seeds%20and%20natural%20honey.',
+    address: 'Gollapalli Village, Near Vantage Spinning Mill, Andhra Pradesh, India - 521111',
+    email: 'madhav.koram@gmail.com',
+    hours: 'Open daily: 6:00 AM - 10:00 PM',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3656.6418495387393!2d80.90438571043599!3d16.735950121178835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDQ0JzA5LjQiTiA4MMKwNTQnMjUuMSJF!5e1!3m2!1sen!2sin!4v1775645192609!5m2!1sen!2sin',
   };
 
   private readonly productCategories: ProductCategory[] = [
