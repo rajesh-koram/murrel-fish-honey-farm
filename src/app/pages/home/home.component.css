@@ -2,6 +2,7 @@
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
+  background-image: linear-gradient(135deg, rgba(34, 56, 40, 0.78), rgba(53, 86, 58, 0.52)), var(--hero-desktop-image);
   background-position: center;
   background-size: cover;
 }
@@ -107,6 +108,7 @@
   .hero-section {
     min-height: auto;
     padding: 3rem 0;
+    background-image: linear-gradient(135deg, rgba(34, 56, 40, 0.76), rgba(53, 86, 58, 0.5)), var(--hero-mobile-image, var(--hero-desktop-image));
   }
 
   .hero-card {

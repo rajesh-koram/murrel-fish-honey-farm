@@ -6,6 +6,7 @@ export interface BusinessInfo {
   tagline: string;
   description: string;
   heroImage: string;
+  heroImageMobile: string;
   phone: string;
   phoneDisplay: string;
   whatsappNumber: string;
@@ -50,7 +51,8 @@ export class BusinessDataService {
     tagline: 'Murrel Fish Seeds & Pure Natural Honey',
     description:
       'Healthy fish seeds for farming and pure organic honey directly from source.',
-    heroImage: '/assets/images/hero-farm.svg',
+    heroImage: '/assets/images/hero-farm.png',
+    heroImageMobile: '/assets/images/hero-farm-mobile.png',
     phone: 'tel:+918688624508',
     phoneDisplay: '+91 86886 24508',
     whatsappNumber: '918688624508',
@@ -71,7 +73,7 @@ export class BusinessDataService {
         {
           id: 'murrel-seeds',
           category: 'murrel-fish',
-          image: '/assets/images/pond-view.svg',
+          image: '/assets/images/pond-view.jpg',
           title: 'Murrel Fish Seeds',
           description:
             'High quality fingerlings suitable for aquaculture and fish farming, with healthy disease-free stock available in different sizes.',
@@ -88,7 +90,7 @@ export class BusinessDataService {
         {
           id: 'raw-honey',
           category: 'honey',
-          image: '/assets/images/wild-honey.svg',
+          image: '/assets/images/wild-honey.jpg',
           title: 'Pure Natural Honey',
           description:
             '100% pure natural honey with no chemicals or additives, collected carefully from natural floral sources.',
@@ -98,7 +100,7 @@ export class BusinessDataService {
         {
           id: 'farm-honey',
           category: 'honey',
-          image: '/assets/images/wild-honey.svg',
+          image: '/assets/images/honey-bottles.jpg',
           title: 'Natural Honey Bottle',
           description:
             'Collected from natural sources and packed with care to preserve purity, aroma, and everyday use quality.',
@@ -113,25 +115,25 @@ export class BusinessDataService {
     {
       id: 'pond-view',
       title: 'Fish Farming Ponds',
-      image: '/assets/images/pond-view.svg',
+      image: '/assets/images/fish-farming-pond.jpg',
       description: 'Clean pond spaces prepared for stocking murrel fish seeds and supporting healthy aquaculture growth.',
     },
     {
       id: 'harvest-day',
       title: 'Net Harvesting of Seeds',
-      image: '/assets/images/harvest-day.svg',
+      image: '/assets/images/harvest-day.jpg',
       description: 'Careful grading and net harvesting of fingerlings for safe transport to fish farming ponds.',
     },
     {
       id: 'breeding-tanks',
       title: 'Fish Seed Breeding Tanks',
-      image: '/assets/images/breeding-tanks.svg',
+      image: '/assets/images/pond-view.jpg',
       description: 'Well-maintained nursery and breeding tanks for healthy murrel seed development and farm supply.',
     },
     {
       id: 'honey-collection',
       title: 'Honey Collection',
-      image: '/assets/images/honey-collection.svg',
+      image: '/assets/images/honey-collection.jpg',
       description: 'Responsible honey collection that protects hive health and quality.',
     },
   ];

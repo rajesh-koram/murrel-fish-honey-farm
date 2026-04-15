@@ -38,5 +38,6 @@ export class HomeComponent {
     },
   ];
 
-  protected readonly heroBackground = `linear-gradient(135deg, rgba(34, 56, 40, 0.78), rgba(53, 86, 58, 0.52)), url('${this.business.heroImage}')`;
+  protected readonly heroDesktopImage = `url('${this.business.heroImage}')`;
+  protected readonly heroMobileImage = `url('${this.business.heroImageMobile}')`;
 }
